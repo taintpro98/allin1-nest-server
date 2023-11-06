@@ -1,5 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { CommonAbstract } from "./common.abstract";
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { CommonAbstract } from './common.abstract';
 
 @Entity('users')
 export class UserEntity extends CommonAbstract {
@@ -7,7 +7,7 @@ export class UserEntity extends CommonAbstract {
   id: string;
 
   @Column({
-    nullable: false
+    nullable: false,
   })
   username: string;
 }
